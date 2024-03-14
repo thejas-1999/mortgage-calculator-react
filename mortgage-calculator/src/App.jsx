@@ -1,7 +1,15 @@
+import Navbar from "./Components/Navbar";
+import Result from "./Components/Result";
+import SliderSelect from "./Components/SliderSelect";
+import TenureSelect from "./Components/TenureSelect";
+
 function App() {
   return (
     <>
-      <h1>Hello world</h1>
+      <Navbar />
+      <SliderSelect />
+      <TenureSelect />
+      <Result />
     </>
   );
 }
