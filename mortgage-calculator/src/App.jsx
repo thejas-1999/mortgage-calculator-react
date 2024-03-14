@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Container } from "@mui/material";
 import Navbar from "./Components/Navbar";
 import Result from "./Components/Result";
