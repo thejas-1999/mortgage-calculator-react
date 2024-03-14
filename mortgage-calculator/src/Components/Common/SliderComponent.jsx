@@ -9,12 +9,16 @@ const SliderComponent = ({
   onChange,
   value,
   label,
+  unit,
 }) => {
   return (
     <Stack my={2}>
       <Stack gap={1}>
         <Typography variant="subtitle2">{label}</Typography>
-        <Typography variant="h4">{defaultValue}₹</Typography>
+        <Typography variant="h4">
+          {defaultValue}
+          {unit}
+        </Typography>
       </Stack>
       <Slider
         defaultValue={defaultValue}
@@ -29,10 +33,12 @@ const SliderComponent = ({
       />
       <Stack direction="row" justifyContent="space-between">
         <Typography variant="caption" color="text.secondary">
-          {min}₹
+          {min}
+          {unit}
         </Typography>
         <Typography variant="caption" color="text.secondary">
-          {max}₹
+          {max}
+          {unit}
         </Typography>
       </Stack>
     </Stack>
